@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="jakarta.faces.facelets"
+      xmlns:h="jakarta.faces.html">
+<ui:composition>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid px-4">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold" href="#{request.contextPath}/dashboard.xhtml">
+                🎓 SMIS
+            </a>
+
+            <!-- Mobile toggle -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#nav"
+                    aria-controls="nav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <h:link outcome="dashboard.xhtml" styleClass="nav-link">
+                            Dashboard
+                        </h:link>
+                    </li>
+
+                    <li class="nav-item">
+                        <h:link outcome="students.xhtml" styleClass="nav-link">
+                            Students
+                        </h:link>
+                    </li>
+
+                    <li class="nav-item">
+                        <h:link outcome="courses.xhtml" styleClass="nav-link">
+                            Courses
+                        </h:link>
+                    </li>
+
+                    <li class="nav-item">
+                        <h:link outcome="enrollments.xhtml" styleClass="nav-link">
+                            Enrollments
+                        </h:link>
+                    </li>
+
+                    <li class="nav-item">
+                        <h:link outcome="grades.xhtml" styleClass="nav-link">
+                            Grades
+                        </h:link>
+                    </li>
+
+                </ul>
+
+                <!-- User info -->
+                <div class="d-flex align-items-center gap-3 text-light">
+                    <span class="small">
+                        👤 #{sessionScope.username}
+                    </span>
+
+                    <a class="btn btn-outline-light btn-sm"
+                       href="#{request.contextPath}/logout">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</ui:composition>
+</html>
