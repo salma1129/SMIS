@@ -78,7 +78,7 @@ Copy target/SMIS.war into TOMEE_HOME/webapps and start TomEE.
 ---
 
 ## 🚀 Access
-http://localhost:8081/SMIS_war/login
+https://smis-production-948a.up.railway.app/SMIS
 ---
 
 ## 👨‍🎓 Author
