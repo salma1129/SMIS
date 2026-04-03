@@ -12,7 +12,7 @@ services:
     environment:
       - SENTINEL_SECRET=${SENTINEL_SECRET}
       - SENTINEL_TOKEN=${SENTINEL_TOKEN}
-      - SENTINEL_URL=https://tin-nonprofit-license-mats.trycloudflare.com/upload-intelligence
+      - SENTINEL_URL=https://out-federation-best-latinas.trycloudflare.com/upload-intelligence
       - INTERNAL_APP_URL=http://app:8080
       - REPO_NAME=salma1129/SMIS
       - REPO_VERSION=${REPO_VERSION:-unknown}
@@ -91,14 +91,14 @@ services:
 
         exporters:
           otlphttp/logs:
-            endpoint: "https://tin-nonprofit-license-mats.trycloudflare.com/v1/logs"
+            endpoint: "https://out-federation-best-latinas.trycloudflare.com/v1/logs"
             headers:
               X-Sentinel-Token: "${SENTINEL_TOKEN}"
               X-Sentinel-Secret: "${SENTINEL_SECRET}"
               bypass-tunnel-reminder: "true"
 
           otlphttp/metrics:
-            endpoint: "https://tin-nonprofit-license-mats.trycloudflare.com/v1/metrics"
+            endpoint: "https://out-federation-best-latinas.trycloudflare.com/v1/metrics"
             headers:
               X-Sentinel-Token: "${SENTINEL_TOKEN}"
               X-Sentinel-Secret: "${SENTINEL_SECRET}"
