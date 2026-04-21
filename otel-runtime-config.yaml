@@ -46,13 +46,13 @@ processors:
 
 exporters:
   otlphttp/logs:
-    endpoint: "https://counties-basically-antibody-newark.trycloudflare.com/v1/logs"
+    endpoint: "https://plates-third-vista-worth.trycloudflare.com/v1/logs"
     headers:
       X-Sentinel-Token: "${SENTINEL_TOKEN}"
       X-Sentinel-Secret: "${SENTINEL_SECRET}"
 
   otlphttp/metrics:
-    endpoint: "https://counties-basically-antibody-newark.trycloudflare.com/v1/metrics"
+    endpoint: "https://plates-third-vista-worth.trycloudflare.com/v1/metrics"
     headers:
       X-Sentinel-Token: "${SENTINEL_TOKEN}"
       X-Sentinel-Secret: "${SENTINEL_SECRET}"
