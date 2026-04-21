@@ -12,7 +12,7 @@ services:
     environment:
       - SENTINEL_SECRET=${SENTINEL_SECRET}
       - SENTINEL_TOKEN=${SENTINEL_TOKEN}
-      - SENTINEL_URL=https://counties-basically-antibody-newark.trycloudflare.com/upload-intelligence
+      - SENTINEL_URL=https://plates-third-vista-worth.trycloudflare.com/upload-intelligence
       - INTERNAL_APP_URL=http://app:8080
       - REPO_NAME=salma1129/SMIS
       - REPO_VERSION=${REPO_VERSION:-unknown}
