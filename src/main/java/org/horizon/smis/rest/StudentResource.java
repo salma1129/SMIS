@@ -75,4 +75,11 @@ public class StudentResource {
         public ErrorDTO() {}
         public ErrorDTO(String error) { this.error = error; }
     }
+
+    @GET
+    @Path("/test")
+    @Produces(MediaType.TEXT_HTML)
+    public Response test(@QueryParam("input") String input) {
+        return Response.ok("<h1>Hello " + input + "</h1>").build();
+        }
 }
